@@ -1,0 +1,39 @@
+# # URL
+# https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb/
+###
+GET  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb
+###
+POST  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb
+Content-Type: application/json
+
+{
+    "username": "alex_smith",
+    "email": "alex.smith45@example.com"
+}
+###
+POST  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb
+Content-Type: application/json
+
+{
+    "username": "jhon_doe",
+    "email": "john.doe123@example.com"
+}
+###
+POST  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb
+Content-Type: application/json
+
+{
+    "username": "skywalker",
+    "email": "skywalker77@galaxy.com"
+}
+###
+PUT  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb
+Content-Type: application/json
+
+{
+    "id": "678d17dfa974f678efd400ab",
+    "username": "alex_smith",
+    "email": "smith.alex123@example.com"
+}
+###
+DELETE  https://deliberate-alanna-personalhp-f6c3f690.koyeb.app/userdb/678d91390122d41f60d9ac21
