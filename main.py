@@ -1,10 +1,16 @@
 # API Basics
 
+import os
+import uvicorn
 from fastapi import FastAPI
 from Routers import products, users, basic_auth_users, jwt_auth_users, users_db
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
 
 # Run the server: uvicorn file_name:instance_of_fastAPI() -> uvicorn main:app --reload
 # Stop the server: Ctrl + C
